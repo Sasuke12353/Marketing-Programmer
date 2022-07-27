@@ -1,0 +1,899 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script type="text/javascript">
+        let gb_channels = {
+            type: '',
+            title: '',
+            desc: '',
+            region: 'ru',
+            product_id: 1924,
+            entrance_path: 'gb.ru/courses/all/development',// custome path
+            x_legal: 0,// checkbox legal entity
+            products: []
+        };
+
+        (function() {
+            document.querySelectorAll('[data-popup=open-popup]').forEach(function (btn) {
+            
+            btn.addEventListener('click', function(el){
+            el = el.target.closest('[data-box-productid]');
+
+            if (el) {
+                document.querySelector('.section-popup .popup-title').innerText = 'Забронировать программу';
+                document.querySelector('.section-popup .popup-subtitle').innerText = el.querySelector('[data-product-card=name]').innerText;
+                document.querySelector('.section-popup .popup-price-big').style.display = 'block';
+                document.querySelector('.section-popup .popup-price-big').innerText = 'от ' + el.querySelector('[data-price=price_main]').innerText + '/месяц';
+                document.querySelector('.section-popup .popup-price-small').style.display = 'block';
+                document.querySelector('.section-popup .popup-price-small').innerText = el.querySelector('[data-price=price_old]').innerText + '/месяц';
+                document.querySelector('.section-popup input[name=product_id]').value = el.getAttribute('data-box-productid');
+                document.querySelector('.section-popup input[type=submit]').value = 'Забронировать программу';
+            } else {
+                document.querySelector('.section-popup .popup-title').innerText = 'Поможем с выбором';
+                document.querySelector('.section-popup .popup-subtitle').innerText = 'Если не нашли подходящую программу или не знаете что выбрать, то заполните форму, мы перезвоним и ответим на все вопросы.';
+                document.querySelector('.section-popup .popup-price-big').style.display = 'none';
+                document.querySelector('.section-popup .popup-price-small').style.display = 'none';
+                document.querySelector('.section-popup input[name=product_id]').value = '4966';
+                document.querySelector('.section-popup input[type=submit]').value = 'Помогите с выбором';
+            }
+
+            document.querySelector('body').style.overflow = 'hidden';
+            document.querySelector('.section-popup:not(.section-popup2)').style = 'display:block; opacity:1;';
+            });
+        });
+
+
+        // pop-up for mouseleave (before close page)
+        document.cookie = 'bnr_leave=1; max-age=0';
+        document.addEventListener('mouseleave', function(e){
+            if (e.clientY < 10 && !gbGetCookie('bnr_leave')) {
+            document.querySelector('.section-popup .popup-title').innerText = 'Не смогли найти подходящую программу?';
+            document.querySelector('.section-popup .popup-subtitle').innerText = 'Оставьте заявку и получите персональный подбор профессии';
+            document.querySelector('.section-popup .popup-price-big').style.display = 'none';
+            document.querySelector('.section-popup .popup-price-small').style.display = 'none';
+            document.querySelector('.section-popup input[name=product_id]').value = '4966';
+            document.querySelector('.section-popup input[type=submit]').value = 'Отправить';
+
+            document.querySelector('body').style.overflow = 'hidden';
+            document.querySelector('.section-popup:not(.section-popup2)').style = 'display:block; opacity:1;';
+            document.cookie = 'bnr_leave=1;';
+            }
+        });
+
+        }());
+    </script> -->
+</head>
+<body>
+    <section class="section">
+        <div class="main-screen_container">
+            <div class="main-screen_columns container">
+                <div class="main-screen_column-left" >
+                    <div class="main-screen_div-title">
+                        <h1 class="main-screen_title">
+                            Станьте инженер-программистом с&nbsp;нуля
+                        </h1>
+                        <img src="./img/h1-img-1.svg" alt="h1-img-1" class="main-screen_title-img-1">
+                        <img src="./img/h1-img-2.png" alt="h1-img-2" class="main-screen_title-img-2">
+                    </div>
+                    <p class="main-screen_paragraph text-24">
+                        Онлайн - обучение с гарантированным трудоустройством.<br>Получите востребованную профессию и&nbsp;зарабатывайте от&nbsp;100&nbsp;000&nbsp;руб./мес.
+                    </p>
+                </div>
+                <div class="main-screen_right-column">
+                    <img src="./img/bg-img-main-dig.svg" alt="bg-img-ms-dig" class="main-screen_img-bg-2">
+                    <img src="./img/bg-img-main.svg" alt="bg-img-ms" class="main-screen_img-bg-1">
+                    <img src="./img/main-screen.gif" alt="main-screen" class="main-screen_img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="courses_container container">
+            <div class="courses_title text-54">
+                Выберите курс
+            </div>
+            <div data-product-card="card" data-box-productid="0" class="courses_grid">
+                <div class="course-card_container">
+                    <div class="course-cars_container-top">
+                        <div class="course-card_tag text-14">
+                            Гарантия трудоустройства
+                        </div>
+                        <div data-product-card="name" data-popup="open-programm-popup" class="course-card_title text-28">
+                            Python-разработка
+                        </div>
+                        <div class="course-card_text text-16">
+                            Программируйте на языке, который взодит в топ по востребованности по всему миру.
+                        </div>
+                    </div>
+                    <div class="course-card_container-bottom">
+                        <div class="course-card_info">
+                            <div class="course-card-info_period text-14">
+                                Срок обучения: <span>15 месяцев</span>
+                            </div>
+                            <div class="course-card-info_date-start text-14">
+                                Старт: <span>19 февраля, каждые 2 недели</span>
+                            </div>
+                            <div class="course-card-info_sale text-20">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="course-card_button-wrapper">
+                            <a data-popup="open-programm-popup" href="" class="course-card_button text-16 button-grey">Подробнее</a>
+                            <a data-popup="open-popup" href="" class="course-card_button text-16 button-margin-top-8">Хочу учиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card_container">
+                    <div class="course-cars_container-top">
+                        <div class="course-card_tag text-14">
+                            Гарантия трудоустройства
+                        </div>
+                        <div class="course-card_title text-28">
+                            Веб-разработка
+                        </div>
+                        <div class="course-card_text text-16">
+                            Научитесь делать сайты и веб-приложения
+                        </div>
+                    </div>
+                    <div class="course-card_container-bottom">
+                        <div class="course-card_info">
+                            <div class="course-card-info_period text-14">
+                                Срок обучения: <span>15 месяцев</span>
+                            </div>
+                            <div class="course-card-info_date-start text-14">
+                                Старт: <span>19 февраля, каждые 2 недели</span>
+                            </div>
+                            <div class="course-card-info_sale text-20">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="course-card_button-wrapper">
+                            <a href="" class="course-card_button text-16 button-grey">Подробнее</a>
+                            <a href="" class="course-card_button text-16 button-margin-top-8">Хочу учиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card_container">
+                    <div class="course-cars_container-top">
+                        <div class="course-card_tag text-14">
+                            Гарантия трудоустройства
+                        </div>
+                        <div class="course-card_title text-28">
+                            Java-разработка
+                        </div>
+                        <div class="course-card_text text-16">
+                            Создавайте облачные хранилища, сетевые чаты, магазины и многое другое
+                        </div>
+                    </div>
+                    <div class="course-card_container-bottom">
+                        <div class="course-card_info">
+                            <div class="course-card-info_period text-14">
+                                Срок обучения: <span>15 месяцев</span>
+                            </div>
+                            <div class="course-card-info_date-start text-14">
+                                Старт: <span>19 февраля, каждые 2 недели</span>
+                            </div>
+                            <div class="course-card-info_sale text-20">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="course-card_button-wrapper">
+                            <a href="" class="course-card_button text-16 button-grey">Подробнее</a>
+                            <a href="" class="course-card_button text-16 button-margin-top-8">Хочу учиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card_container">
+                    <div class="course-cars_container-top">
+                        <div class="course-card_tag text-14">
+                            Гарантия трудоустройства
+                        </div>
+                        <div class="course-card_title text-28">
+                            Frontent-разработка
+                        </div>
+                        <div class="course-card_text text-16">
+                            Освойте самую востребованную IT-профессию, по данным HeadHunter
+                        </div>
+                    </div>
+                    <div class="course-card_container-bottom">
+                        <div class="course-card_info">
+                            <div class="course-card-info_period text-14">
+                                Срок обучения: <span>15 месяцев</span>
+                            </div>
+                            <div class="course-card-info_date-start text-14">
+                                Старт: <span>19 февраля, каждые 2 недели</span>
+                            </div>
+                            <div class="course-card-info_sale text-20">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="course-card_button-wrapper">
+                            <a href="" class="course-card_button text-16 button-grey">Подробнее</a>
+                            <a href="" class="course-card_button text-16 button-margin-top-8">Хочу учиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card_container">
+                    <div class="course-cars_container-top">
+                        <div class="course-card_tag text-14">
+                            Гарантия трудоустройства
+                        </div>
+                        <div class="course-card_title text-28">
+                            Android-разработка
+                        </div>
+                        <div class="course-card_text text-16">
+                            Создавайте приложения для Android
+                        </div>
+                    </div>
+                    <div class="course-card_container-bottom">
+                        <div class="course-card_info">
+                            <div class="course-card-info_period text-14">
+                                Срок обучения: <span>15 месяцев</span>
+                            </div>
+                            <div class="course-card-info_date-start text-14">
+                                Старт: <span>19 февраля, каждые 2 недели</span>
+                            </div>
+                            <div class="course-card-info_sale text-20">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="course-card_button-wrapper">
+                            <a href="" class="course-card_button text-16 button-grey">Подробнее</a>
+                            <a href="" class="course-card_button text-16 button-margin-top-8">Хочу учиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card_container">
+                    <div class="course-cars_container-top">
+                        <div class="course-card_tag text-14">
+                            Гарантия трудоустройства
+                        </div>
+                        <div class="course-card_title text-28">
+                            Fullstack-Javascript
+                        </div>
+                        <div class="course-card_text text-16">
+                            Научитесь создавать сайты, мобильные приложения и высоконагруденные сервисы.оздавайте облачные хранилища, сетевые чаты, магазины и многое иное
+                        </div>
+                    </div>
+                    <div class="course-card_container-bottom">
+                        <div class="course-card_info">
+                            <div class="course-card-info_period text-14">
+                                Срок обучения: <span>15 месяцев</span>
+                            </div>
+                            <div class="course-card-info_date-start text-14">
+                                Старт: <span>19 февраля, каждые 2 недели</span>
+                            </div>
+                            <div class="course-card-info_sale text-20">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="course-card_button-wrapper">
+                            <a href="" class="course-card_button text-16 button-grey">Подробнее</a>
+                            <a href="" class="course-card_button text-16 button-margin-top-8">Хочу учиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card_container">
+                    <div class="course-cars_container-top">
+                        <div class="course-card_tag text-14">
+                            Гарантия трудоустройства
+                        </div>
+                        <div class="course-card_title text-28">
+                            1C-разработка
+                        </div>
+                        <div class="course-card_text text-16">
+                            Научитесь создавать архитектуру приложения, разрабатывать подсистемы и подготовитесь к сдаче экзаменов 1С
+                        </div>
+                    </div>
+                    <div class="course-card_container-bottom">
+                        <div class="course-card_info">
+                            <div class="course-card-info_period text-14">
+                                Срок обучения: <span>15 месяцев</span>
+                            </div>
+                            <div class="course-card-info_date-start text-14">
+                                Старт: <span>19 февраля, каждые 2 недели</span>
+                            </div>
+                            <div class="course-card-info_sale text-20">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="course-card_button-wrapper">
+                            <a href="" class="course-card_button text-16 button-grey">Подробнее</a>
+                            <a href="" class="course-card_button text-16 button-margin-top-8">Хочу учиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card_container">
+                    <div class="course-cars_container-top">
+                        <div class="course-card_tag text-14">
+                            Гарантия трудоустройства
+                        </div>
+                        <div class="course-card_title text-28">
+                            Go-разработчик
+                        </div>
+                        <div class="course-card_text text-16">
+                            Освойте язык программирования, созданный в Google
+                        </div>
+                    </div>
+                    <div class="course-card_container-bottom">
+                        <div class="course-card_info">
+                            <div class="course-card-info_period text-14">
+                                Срок обучения: <span>15 месяцев</span>
+                            </div>
+                            <div class="course-card-info_date-start text-14">
+                                Старт: <span>19 февраля, каждые 2 недели</span>
+                            </div>
+                            <div class="course-card-info_sale text-20">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="course-card_button-wrapper">
+                            <a href="" class="course-card_button text-16 button-grey">Подробнее</a>
+                            <a href="" class="course-card_button text-16 button-margin-top-8">Хочу учиться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="results_container">
+            <div class="results_container-inside container">
+                <div class="results_title text-54">
+                    Ваши результаты по итогам обучения
+                </div>
+                <div class="results_columns">
+                    <div class="results_column-left">
+                        <div class="results_heading text-36 margin-top-0">
+                            Трудоустройство
+                        </div>
+                        <div class="results_description text-24">
+                            Обретете профессию, дающую работу, сможете претендовать на реальные вакансии и начать карьеру в диджитал сфере.
+                        </div>
+                        <div class="results_heading text-36">
+                            Возможность создать бизнес
+                        </div>
+                        <div class="results_description text-24">
+                            В нашем бизнес-акселераторе вы протестируете, реализуете и продвинете собственные идеи, а также получите редкие знания о бизнес-процессах.
+                        </div>
+                        <div class="results_description-mobile text-28 margin-top-64">
+                            Получите <span>прикладные знания</span> и <span>навыки</span>, востребованные на рынке труда и применимые в жизни и дальнейшей учебе
+                        </div>
+                        <div class="results_description-mobile text-28">
+                            Соберете <span>портфолио</span> готовых проектов
+                        </div>
+                        <div class="results_license">
+                            <img src="./img/license.png" alt="license" class="img-license">
+                            <div class="results_license-info">
+                                <div class="results-license-info_top">
+                                    <div class="results_license-title text-28">
+                                        Государственная лицензия ДПО № 040485 
+                                    </div>
+                                    <div class="results_license-description text-16">
+                                        Проводим обучение на основании государственной лицензии от 3 декабря 2019 года на право оказывать услуги по дополнительному профессиональному образованию и дополнительному образованию детей и взрослых.
+                                    </div>
+                                </div>
+                                <div class="results-license-info_bottom">
+                                    <a href="" class="results-license_link text-14">
+                                        Посмотрите лицензию и приложение
+                                    </a>
+                                    <div class="text-14">
+                                        1,1 Мб
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results_column-right">
+                        <div>
+                            <div class="results-column-right_description text-28">
+                                Получите <span>прикладные знания</span> и <span>навыки</span>, востребованные на рынке труда и применимые в жизни и дальнейшей учебе
+                            </div>
+                            <div class="results-column-right_description text-28">
+                                Соберете <span>портфолио</span> готовых проектов
+                            </div>
+                        </div>
+                        <div class="results-right-column_diploma">
+                            <div class="results-description_diploma">
+                                <img src="./img/diploma.svg" alt="diploma" class="img-diploma">
+                                <div class="results-description_diploma-text text-16">
+                                    После успешного прохождения выпускных испытаний студенты получают документ, подтверждающий уровень их компетенций
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="logo_container">
+            <div class="logo_container-inside container">
+                <div class="logo-container_top">
+                    <div class="logo-top_title text-54">
+                        Гарантия трудоустройства закреплена в&nbsp;договоре
+                    </div>
+                    <div class="logo-top_title-description text-24">
+                        Если после успешного обучения вы не найдете работу, <span>мы вернем вам деньги</span>
+                    </div>
+                </div>
+                <div class="logo-container_bottom">
+                    <div class="logo-bottom_title text-28">
+                        Где работают наши выпускники
+                    </div>
+                    <div class="logo-container_lines">
+                        <div class="logo-container_line_1">
+                            <img src="./img/logo/GB.svg" alt="GB">
+                            <img src="./img/logo/Sberbank.svg" alt="Sberbank">
+                            <img src="./img/logo/VK.svg" alt="VK">
+                            <img src="./img/logo/Megafon.svg" alt="Megafon">
+                            <img src="./img/logo/Tele2.svg" alt="Tele2">
+                            <img src="./img/logo/X5Group.svg" alt="X5Group">
+                            <img src="./img/logo/RuCenter.svg" alt="RuCenter">
+                            <img src="./img/logo/TKB.svg" alt="TKB">
+                        </div>
+                        <div class="logo-container_line_2">
+                            <img src="./img/logo/Raiffeisen_Bank.svg" alt="Raiffeisen_Bank">
+                            <img src="./img/logo/Rostelekom.svg" alt="Rostelekom">
+                            <img src="./img/logo/Alfa_Bank.svg" alt="Alfa_Bank">
+                            <img src="./img/logo/MTS.svg" alt="MTS">
+                            <img src="./img/logo/Otkrytie.svg" alt="Otkrytie">
+                            <img src="./img/logo/Gasprom.svg" alt="Gasprom">
+                            <img src="./img/logo/W.svg" alt="W">
+                            <img src="./img/logo/Rosgosstrakh.svg" alt="Rosgosstrakh">
+                        </div>
+                        <div class="logo-container_line_3">
+                            <img src="./img/logo/Paragon.svg" alt="Paragon">
+                            <img src="./img/logo/e-Legion.svg" alt="e-Legion">
+                            <img src="./img/logo/Wargaming.svg" alt="Wargaming">
+                            <img src="./img/logo/Forsayt.svg" alt="Forsayt">
+                            <img src="./img/logo/Umbrella.svg" alt="Umbrella">
+                            <img src="./img/logo/Motify.svg" alt="Motify">
+                            <img src="./img/logo/Yula.svg" alt="Yula">
+                            <img src="./img/logo/Krok.svg" alt="Krok">
+                            <img src="./img/logo/Home_Credit_Bank.svg" alt="Home_Credit_Bank">
+                        </div>
+                        <div class="logo-container_line_4">
+                            <img src="./img/logo/Litres.svg" alt="Litres">
+                            <img src="./img/logo/Luxoft.svg" alt="Luxoft">
+                            <img src="./img/logo/epam.svg" alt="epam">
+                            <img src="./img/logo/reconnect.svg" alt="reconnect">
+                            <img src="./img/logo/PSB.svg" alt="PSB">
+                            <img src="./img/logo/Magnit.svg" alt="Magnit">
+                            <img src="./img/logo/MIF.svg" alt="MIF">
+                            <img src="./img/logo/Nornikel.svg" alt="Nornikel">
+                            <img src="./img/logo/Vulkan.svg" alt="Vulkan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section padding-bottom-95">
+        <div class="pluses-educ_container container">
+            <div class="pluses-educ_title text-54">
+                <div class="pluses-educ_title-1">Плюсы</div>
+                <img src="./img/educ.svg" alt="educ" class="pluse-educ_title-img">
+                <div class="pluses-educ_title-2">обучения</div>
+            </div>
+            <div class="pluses-educ_grid">
+                <div class="pluses-educ_grid-card">
+                    <div>
+                        <img src="./img/ghost.png" alt="ghost" class="pluses-educ_card-img">
+                    </div>
+                    <div class="pluses-educ_card-info">
+                        <div class="pluses-educ_card-info_title text-38">
+                            Трудоустройство
+                        </div>
+                        <div class="pluses-educ_card-info_description text-20">
+                            Предложим подходящие вакансии и поможем получить работу мечты
+                        </div>
+                    </div>
+                </div>
+                <div class="pluses-educ_grid-card">
+                    <div>
+                        <img src="./img/fire.png" alt="ghost" class="pluses-educ_card-img">
+                    </div>
+                    <div class="pluses-educ_card-info">
+                        <div class="pluses-educ_card-info_title text-38">
+                            Проекты в портфолио
+                        </div>
+                        <div class="pluses-educ_card-info_description text-20">
+                            После окончания у вас будут крутые проекты, за которые не стыдно
+                        </div>
+                    </div>
+                </div>
+                <div class="pluses-educ_grid-card">
+                    <div>
+                        <img src="./img/light.png" alt="ghost" class="pluses-educ_card-img">
+                    </div>
+                    <div class="pluses-educ_card-info">
+                        <div class="pluses-educ_card-info_title text-38">
+                            Топовые спикеры
+                        </div>
+                        <div class="pluses-educ_card-info_description text-20">
+                            “Живое” онлайн обучение и кураторы, которые всегда помогут 
+                        </div>
+                    </div>
+                </div>
+                <div class="pluses-educ_grid-card">
+                    <div>
+                        <img src="./img/chat.png" alt="ghost" class="pluses-educ_card-img">
+                    </div>
+                    <div class="pluses-educ_card-info">
+                        <div class="pluses-educ_card-info_title text-38">
+                            Доступ к сообществу
+                        </div>
+                        <div class="pluses-educ_card-info_description text-20">
+                            Много материалов и полезные связи вместе с Geekbrains
+                        </div>
+                    </div>
+                </div>
+                <div class="pluses-educ_grid-card">
+                    <div>
+                        <img src="./img/academic_cap.png" alt="ghost" class="pluses-educ_card-img">
+                    </div>
+                    <div class="pluses-educ_card-info">
+                        <div class="pluses-educ_card-info_title text-38">
+                            Актуальная программа
+                        </div>
+                        <div class="pluses-educ_card-info_description text-20">
+                            Свежие практики и инструменты рынка программирования
+                        </div>
+                    </div>
+                </div>
+                <div class="pluses-educ_grid-card">
+                    <div>
+                        <img src="./img/star.png" alt="ghost" class="pluses-educ_card-img">
+                    </div>
+                    <div class="pluses-educ_card-info">
+                        <div class="pluses-educ_card-info_title text-38">
+                            Квалификация
+                        </div>
+                        <div class="pluses-educ_card-info_description text-20">
+                            Получите документы о квалификации и диплом
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section background-orange">
+        <div class="form_container">
+            <div class="form-container_columns">
+                <img src="./img/form_info.gif" alt="clock-big" class="form-columns_img-clock-big">
+                <img src="./img/form_info.gif" alt="clock-small" class="form-columns_img-clock-small">
+                <img src="./img/form_logo-gb.svg" alt="gb-logo" class="form-columns_img-gb-logo">
+                <div class="form-column-left_info">
+                    <div class="form-column-left_info-title text-54">
+                        Удобная рассрочка до&nbsp;36&nbsp;<span class="form-column-left_info-title-1">месяцев</span><span class="form-column-left_info-title-2">мес.</span>
+                    </div>
+                    <div class="form-column-left_info-description text-28">
+                        Если удобнее платить за учебу постепенно – возьмите рассрочку без переплат от нашего надежного банка-партнера.
+                    </div>
+                </div>
+                <div class="form-column-right_form">
+                    <div class="form-column-right_form-title text-36">
+                        Оставить заявку
+                    </div>
+                    <div class="form-column-right_form-description text-20">
+                        Перезвоним, поможем выбрать эксперта и&nbsp;ответим на все вопросы
+                    </div>
+                    <input type="text" name="full_name" value="" placeholder="Имя Фамилия" class="form-input_name">
+                    <input type="email" name="email" value="" placeholder="Email" class="form-input_email">
+                    <input type="tel" name="phone" value="" placeholder="Телефон" class="form-input_phone">
+                    <button class="form_button">Оставить заявку</button>
+                    <div class="form-button_description text-14">
+                        Оставляя заявку, вы соглашаетесь с <span>договором оферты</span> и&nbsp;<span>политикой конфиденциальности</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container_column-right">
+                <img src="./img/form.gif" alt="form-cover" class="form_img-cover">
+            </div>
+        </div>
+    </section>
+
+    <div id="popup" class="section-popup2 section-popup popup_background-dark">
+        <div class="popup_body">
+            <img data-popup="close" src="./img/cancel.svg" alt="cancel" class="popup_close" href="">
+            <div class="popup_container">
+                <img data-product-popup="icon" src="./img/flag.svg" alt="flag" class="popup_flag">
+                <div data-box-productid="0" class="popup-conteiner_columns">
+                    <div class="popup-columns_left">
+                        <div data-product-popup="name" class="popup-columns-left_title text-54">
+                            DevOps
+                        </div>
+                        <div data-product-popup="desc" class="popup-columns-left_description text-18">
+                            Научитесь контролировать и автоматизировать работу отделов разработки и администрирования
+                        </div>
+                        <div class="popup-columns-left_tags">
+                            <div class="popup-columns-left_tag-1">
+                                <img src="./img/shield.svg" alt="shiel" class="popup-columns-left_tag-img">
+                                <div class="popup-columns-left_tag-description text-14">
+                                    Трудоустройство после обучения
+                                </div>
+                            </div>
+                            <div class="popup-columns-left_tag-2">
+                                <img src="./img/academic_cap_popup.svg" alt="shiel" class="popup-columns-left_tag-img">
+                                <div class="popup-columns-left_tag-description text-14">
+                                    Диплом о профессиональной переподготовке
+                                </div>
+                            </div>
+                            <div class="popup-columns-left_tag-3">
+                                <img src="./img/list.svg" alt="shiel" class="popup-columns-left_tag-img">
+                                <div class="popup-columns-left_tag-description text-14">
+                                    Государственная образовательная лицензия
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-columns-right_prices">
+                            <div>
+                                <div class="popup-columns-right_price-old text-16">
+                                    <s>от 7 171₽ / месяц</s>
+                                </div>
+                                <div class="popup-columns-right_price-main text-28">
+                                    от <span class="text-bold text-36">4 195₽</span> / месяц
+                                </div>
+                                <div class="popup-columns-right_price-description-1 text-16">
+                                    Рассрочка до 36 месяцев
+                                </div>
+                                <div class="popup-columns-right_price-description-2 text-16">
+                                    Первый платеж через 6 месяцев
+                                </div>
+                            </div>
+                            <button data-popup="btn_scroll_to_form" class="popup-columns-right_price_button form_button text-20 ">
+                                Оставить заявку
+                            </button>
+                        </div>
+                        <div class="popup-columns-left_program">
+                            <div>
+                                <div class="popup_program-title text-54">
+                                    Программа обучения
+                                </div>
+                                <div class="popup_program-columns">
+                                    <div class="popup-program-columns_left">
+                                        <div class="popup-program-left_line"></div>
+                                        <div class="popup-program-left_div-arrows">
+                                            <img src="./img/arrow_program.svg" alt="program-arrow">
+                                            <img src="./img/arrow_program.svg" alt="program-arrow">
+                                            <img src="./img/arrow_program.svg" alt="program-arrow">
+                                        </div>
+                                        <div class="popup-program-left_line-bottom"></div>
+                                    </div>
+                                    <div class="popup-program-columns_right">
+                                        <div class="popup-program-columns_right-quarter text-16">
+                                            I четверть
+                                        </div>
+                                        <div class="popup-program-columns_right-title text-28">
+                                            Установка и настройка виртуальной машины с Linux
+                                        </div>
+                                        <div class="popup-program-columns_right-description text-14">
+                                            В первой четверти студенты освоят основы операционной системы Linux, принципы построения компьютерных сетей и изучат основные сетевые протоколы.
+                                        </div>
+                                        <ul class="popup-program-columns_right-list text-16">
+                                            <li class="popup-program-right_list-item">Встреча декана факультета со студентами</li>
+                                            <li class="popup-program-right_list-item">Компьютерные сети</li>
+                                            <li class="popup-program-right_list-item">Введение в UNIX-системы</li>
+                                            <li class="popup-program-right_list-item">Основные сервисы на Linux для предприятия</li>
+                                            <li class="popup-program-right_list-item">Анализ, оптимизация и аварийные работы в Linux</li>
+                                        </ul>
+                                        <div class="popup-program-columns_right-quarter text-16 margin-top-64">
+                                            II четверть
+                                        </div>
+                                        <div class="popup-program-columns_right-title text-28">
+                                            Программирование и автоматизация
+                                        </div>
+                                        <div class="popup-program-columns_right-description text-14">
+                                            Во второй четверти студенты научатся программировать на Python, а также познакомятся с системой управления конфигурациями Ansible.
+                                        </div>
+                                        <ul class="popup-program-columns_right-list text-16">
+                                            <li class="popup-program-right_list-item">Основы языка Python</li>
+                                            <li class="popup-program-right_list-item">Базы данных. Основы</li>
+                                            <li class="popup-program-right_list-item">Системы управления конфигурациями</li>
+                                        </ul>
+                                        <div class="popup-program-columns_right-quarter text-16 margin-top-64">
+                                            III четверть
+                                        </div>
+                                        <div class="popup-program-columns_right-title text-28">
+                                            Облачные технологии и микросервисная архитектура
+                                        </div>
+                                        <div class="popup-program-columns_right-description text-14">
+                                            В третьей четверти студенты освоят облачные технологии, развернут контейнеризованные приложения в Kubernetes и Docker, а также познакомятся с системами виртуализации. Второй курс модуля «Основы облачных технологий» разработан совместно со специалистами облачной платформы VK Cloud Solutions (Mail.ru Cloud Solutions), на нём вы получите практический опыт использования публичной облачной платформы и S3-хранилищ от ведущих экспертов рынка.
+                                        </div>
+                                        <ul class="popup-program-columns_right-list text-16">
+                                            <li class="popup-program-right_list-item">Системы виртуализации</li>
+                                            <li class="popup-program-right_list-item">Основы облачных технологий</li>
+                                            <li class="popup-program-right_list-item">Микросервисная архитектура и контейнеризация</li>
+                                        </ul>
+                                        <div class="popup-program-columns_right-quarter text-16 margin-top-64">
+                                            IV четверть
+                                        </div>
+                                        <div class="popup-program-columns_right-title text-28">
+                                            DevOps-практики
+                                        </div>
+                                        <div class="popup-program-columns_right-description text-14">
+                                            В четвертой четверти студенты научатся налаживать процессы непрерывной интеграции и доставки кода, рассмотрят модель «Инфраструктура как код», изучат и применят на практике современные методики разработки ПО. Также попрактикуются настраивать систему мониторинга на примере Prometheus + Grafana и настроят отправку оповещений о событиях.
+                                        </div>
+                                        <ul class="popup-program-columns_right-list text-16">
+                                            <li class="popup-program-right_list-item">Процессы CI/CD</li>
+                                            <li class="popup-program-right_list-item">Мониторинг распределенных приложений/микросервисов</li>
+                                            <li class="popup-program-right_list-item">Методологии Agile/Scrum/Devops</li>
+                                        </ul>
+                                        <div class="popup-program-columns_right-quarter text-16 margin-top-64">
+                                            Вне четверти
+                                        </div>
+                                        <div class="popup-program-columns_right-title text-28">
+                                            Курсы со свободной датой старта
+                                        </div>
+                                        <div class="popup-program-columns_right-description text-14">
+                                            Подготовка к собеседованию DevOps-инженера
+                                        </div>
+                                        <ul class="popup-program-columns_right-list text-16">
+                                            <li class="popup-program-right_list-item">Подготовка к собеседованию DevOps-инженера</li>
+                                            <li class="popup-program-right_list-item">Windows Server, PowerShell и WMI</li>
+                                            <li class="popup-program-right_list-item">Командный проект</li>
+                                            <li class="popup-program-right_list-item">Git. Базовый курс</li>
+                                            <li class="popup-program-right_list-item">Операционные системы</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-columns_right">
+                    </div>
+                </div>
+                <div class="popup_bonus">
+                    <div class="popup-columns-right_capital">
+                        <div class="popup-columns-right_capital-left">
+                            <div class="popup-capital-left_title text-28 text-bold">
+                                Материнский капитал
+                            </div>
+                            <div class="popup-capital-left_descripton text-14">
+                                Направьте материнский капитал на образование любого из детей
+                            </div>
+                        </div>
+                        <div class="popup-columns-right_capital-right">
+                            <img src="./img/popup-heart.svg" alt="heart" class="popup-columns-right_capital-img">
+                            <button class="popup-button-arrow text-16">Подробнее <img src="./img/button-arrow.svg" alt="button-arrow-img" class="button-arrow-img"></button>
+                        </div>
+                    </div>
+                    <div class="popup-columns-right_recoupment">
+                        <div class="popup-columns-right_recoupment-left">
+                            <div class="popup-recoupment-left_title text-28 text-bold">
+                                Налоговый вычет
+                            </div>
+                            <div class="popup-recoupment-left_descripton text-14">
+                                Оформите налоговый вычет и верните 13 % от стоимости обучения
+                            </div>
+                        </div>
+                        <div class="popup-columns-right_recoupment-right">
+                            <img src="./img/coin.svg" alt="coin" class="popup-columns-right_recoupment-img">
+                            <button class="popup-button-arrow text-16">Подробнее <img src="./img/button-arrow.svg" alt="button-arrow-img" class="button-arrow-img"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-teachers_title text-54">
+                    Преподаватели
+                </div>
+                <div class="popup-teachers_grid">
+                    <div class="popup-teachers_grid-card">
+                        <img src="./img/teacher.svg" alt="teacher" class="popup-teachers_img">
+                        <div class="popup-teachers-card_name text-28">
+                            Андрей Буранов
+                        </div>
+                        <div class="popup-teachers-card_function text-16">
+                            Системный администратор OC Linux в VK Group
+                        </div>
+                        <div class="popup-teachers-card_description text-16">
+                            За 5 лет прошёл путь от помощника системного администратора в небольшой веб-студии до специалиста по UNIX-системам в компании Mail.ru Group. Работал в компании NetCracker на должности инженера NIX-систем. Разрабатывал схемы систем мониторинга, стал тренером-экспертом по классификации Career Development Center. Читает курсы «Linux. Рабочая станция и «Операционные системы».
+                        </div>
+                    </div>
+                    <div class="popup-teachers_grid-card">
+                        <img src="./img/teacher.svg" alt="teacher" class="popup-teachers_img">
+                        <div class="popup-teachers-card_name text-28">
+                            Александр Терсков
+                        </div>
+                        <div class="popup-teachers-card_function text-16">
+                            DevOps-инженер в банковской сфере
+                        </div>
+                        <div class="popup-teachers-card_description text-16">
+                            Декан факультета  DevOps и преподаватель в GeekBrains. Более пяти лет работал системным администратором. Занимается автоматизацией, построением процессов CI/CD, работой в Kubernetes. Придерживается подхода «Инфраструктура как код» при реализации проектов как в частных, так и в общедоступных облачных сервисах. Окончил университет МИРЭА.
+                        </div>
+                    </div>
+                    <div class="popup-teachers_grid-card">
+                        <img src="./img/teacher.svg" alt="teacher" class="popup-teachers_img">
+                        <div class="popup-teachers-card_name text-28">
+                            Николай Мищенков
+                        </div>
+                        <div class="popup-teachers-card_function text-16">
+                            DevOps в компании Optibet LT
+                        </div>
+                        <div class="popup-teachers-card_description text-16">
+                            В Optibet смигрировал сервисы с Rancher в GKE, описал инфраструктуру через Terraform, внедрил GitOps, чтобы обезопасить продуктовую среду. Ранее занимал должность технического директора в дата-центре в AS Balticom. Вместе с командой построил современный дата-центр, начиная с обеспечения энергоподачи и охлаждения, заканчивая автоматизацией разворачивания всех сервисов с помощью Ansible.
+                        </div>
+                    </div>
+                    <div class="popup-teachers_grid-card">
+                        <img src="./img/teacher.svg" alt="teacher" class="popup-teachers_img">
+                        <div class="popup-teachers-card_name text-28">
+                            Никита Корсаков
+                        </div>
+                        <div class="popup-teachers-card_function text-16">
+                            Cloud Automation Engineer в DINS
+                        </div>
+                        <div class="popup-teachers-card_description text-16">
+                            Работает с Linux и инфраструктурным ПО более пяти лет. В DINS занимается поддержкой и развитием автоматизации доставки виртуальных машин в облако и автоматизации настройки ОС и ПО.
+                        </div>
+                    </div>
+                    <div class="popup-teachers_grid-card">
+                        <img src="./img/teacher.svg" alt="teacher" class="popup-teachers_img">
+                        <div class="popup-teachers-card_name text-28">
+                            Николай Лавлинский
+                        </div>
+                        <div class="popup-teachers-card_function text-16">
+                            Технический директор Метод Лаб
+                        </div>
+                        <div class="popup-teachers-card_description text-16">
+                            В Метод Лаб занимается техническим руководством и оптимизацией производительности веб-приложений. В веб-разработке более 15 лет. За это время под его руководством и с его участием было разработано более 100 сайтов и приложений, а также система управления сайтами. Кандидат экономических наук и преподаватель в РЭУ им. Г. В. Плеханова.
+                        </div>
+                    </div>
+                    <div class="popup-teachers_grid-card">
+                        <img src="./img/teacher.svg" alt="teacher" class="popup-teachers_img">
+                        <div class="popup-teachers-card_name text-28">
+                            Роман Шнырев
+                        </div>
+                        <div class="popup-teachers-card_function text-16">
+                            Cloud & AI architect лаборатории новых технологических решений Сбера
+                        </div>
+                        <div class="popup-teachers-card_description text-16">
+                            Креативный визионер, с 20-летним опытом в сфере ИТ. Занимается развитием новых технологических продуктов, оценкой потенциала инновационных инфраструктурных решений в сегменте enterprise и применением лучших практик мировых лидеров в Cloud, Edge computing в том числе с применением AI. Выступает на конференциях и делится знаниями с аудиторией.
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-form_container">
+                    <div class="popup-form-container_column-left">
+                        <div class="popup-form-left_type text-28">
+                            Программа
+                        </div>
+                        <div class="popup-form-left_title text-54">
+                            DevOps
+                        </div>
+                        <div class="popup-form-left_price-old text-16">
+                            <s>от 7 171₽ / месяц</s>
+                        </div>
+                        <div class="popup-form-left_price-main text-28">
+                            от <span class="text-bold text-36">4 195₽</span> / месяц
+                        </div>
+                        <div class="popup-form-left_price-description text-16">
+                            При рассрочке до 36 месяцев
+                        </div>
+                    </div>
+                    <div class="popup-form-container_column-right">
+                        <div class="popup-form-right_title text-28">
+                            Запись на курс
+                        </div>
+                        <input type="text" name="full_name" value="" placeholder="Имя Фамилия" class="form-input_name">
+                    <input type="email" name="email" value="" placeholder="Email" class="form-input_email">
+                    <input type="tel" name="phone" value="" placeholder="Телефон" class="form-input_phone">
+                        <button class="form_button">
+                            Отправить заявку
+                        </button>
+                        <div class="form-button_description text-14">
+                            Оставляя заявку, вы соглашаетесь с <span>договором оферты</span> и&nbsp;<span>политикой конфиденциальности</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
